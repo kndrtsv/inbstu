@@ -63,6 +63,20 @@ build CMakeFiles/coursework.dir/sqlite3.c.obj: C_COMPILER__coursework_unscanned_
   OBJECT_DIR = CMakeFiles\coursework.dir
   OBJECT_FILE_DIR = CMakeFiles\coursework.dir
 
+build CMakeFiles/coursework.dir/Transaction.cpp.obj: CXX_COMPILER__coursework_unscanned_Debug C$:/Users/user/Documents/inbstu/oop/coursework/Transaction.cpp || cmake_object_order_depends_target_coursework
+  DEP_FILE = CMakeFiles\coursework.dir\Transaction.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/user/Documents/inbstu/oop/coursework/.
+  OBJECT_DIR = CMakeFiles\coursework.dir
+  OBJECT_FILE_DIR = CMakeFiles\coursework.dir
+
+build CMakeFiles/coursework.dir/TransactionFactory.cpp.obj: CXX_COMPILER__coursework_unscanned_Debug C$:/Users/user/Documents/inbstu/oop/coursework/TransactionFactory.cpp || cmake_object_order_depends_target_coursework
+  DEP_FILE = CMakeFiles\coursework.dir\TransactionFactory.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/user/Documents/inbstu/oop/coursework/.
+  OBJECT_DIR = CMakeFiles\coursework.dir
+  OBJECT_FILE_DIR = CMakeFiles\coursework.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target coursework
@@ -71,7 +85,7 @@ build CMakeFiles/coursework.dir/sqlite3.c.obj: C_COMPILER__coursework_unscanned_
 #############################################
 # Link the executable coursework.exe
 
-build coursework.exe: CXX_EXECUTABLE_LINKER__coursework_Debug CMakeFiles/coursework.dir/main.cpp.obj CMakeFiles/coursework.dir/sqlite3.c.obj
+build coursework.exe: CXX_EXECUTABLE_LINKER__coursework_Debug CMakeFiles/coursework.dir/main.cpp.obj CMakeFiles/coursework.dir/sqlite3.c.obj CMakeFiles/coursework.dir/Transaction.cpp.obj CMakeFiles/coursework.dir/TransactionFactory.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\coursework.dir

@@ -7,7 +7,10 @@ include_directories(.)
 
 add_executable(coursework
         main.cpp
-        sqlite3.c
         sqlite3.h
-        transaction.h
-        transaction_factory.h)
+        sqlite3.c
+        Transaction.h
+        Transaction.cpp
+        TransactionFactory.h
+        TransactionFactory.cpp
+        )
