@@ -9,4 +9,5 @@ add_executable(coursework
         main.cpp
         sqlite3.c
         sqlite3.h
-        transaction.h)
+        transaction.h
+        transaction_factory.h)
