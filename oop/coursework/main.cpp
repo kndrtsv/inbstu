@@ -1,6 +1,7 @@
-#include <iostream>
+#include "FinanceApp.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    FinanceApp app;
+    app.run();
     return 0;
 }

@@ -13,4 +13,16 @@ add_executable(coursework
         Transaction.cpp
         TransactionFactory.h
         TransactionFactory.cpp
-        )
+        DatabaseImporter.cpp
+        UserInputImporter.cpp
+        GroupingStrategy.h
+        CategoryGroupingStrategy.cpp
+        Category.cpp
+        Category.h
+        DataGrouper.cpp
+        ReportGenerator.cpp
+        CategoryReportGenerator.cpp
+        RecommendationEngine.cpp
+        FinanceApp.cpp
+        TransactionHistoryViewer.cpp
+)
