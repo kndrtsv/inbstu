@@ -3,7 +3,9 @@
 
 #include <string>
 #include <vector>
+#include <map>
 #include "Transaction.h"
+#include "sqlite3.h"
 
 class Category {
 public:
@@ -16,5 +18,8 @@ public:
 
     void addTransaction(Transaction* transaction);
 };
+
+std::map<std::string, Category> loadLimitFromDB();
+bool saveLimitToDB(const std::string& categoryName, double limitValue);
 
 #endif //COURSEWORK_CATEGORY_H
