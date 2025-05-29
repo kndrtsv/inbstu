@@ -1,46 +1,39 @@
-#ifndef UNTITLED_TRANSACTION_H
-#define UNTITLED_TRANSACTION_H
+#ifndef COURSEWORK_TRANSACTION_H
+#define COURSEWORK_TRANSACTION_H
 
 #include <string>
 
 class Transaction {
 public:
     enum Type { INCOME, EXPENSE };
+
 protected:
     double amount;
     std::string date;
     std::string description;
     std::string category;
     Type type;
+
 public:
-    Transaction(double amount, const std::string& date, const std::string& description, const std::string& category, Type type)
-            : amount(amount), date(date), description(description), category(category), type(type) {}
+    Transaction(double amount, const std::string& date, const std::string& description, const std::string& category, Type type);
 
     virtual ~Transaction() = default;
 
-    double getAmount() const {
-        return amount;
-    }
-
-    std::string getCategory() const {
-        return category;
-    }
-
-    Type getType() const {
-        return type;
-    }
+    double getAmount() const;
+    std::string getCategory() const;
+    Type getType() const;
+    const std::string& getDate() const;
+    const std::string& getDescription() const;
 };
 
 class Income : public Transaction {
 public:
-    Income(double amount, const std::string& date, const std::string& description, const std::string& category)
-            : Transaction(amount, date, description, category, Transaction::INCOME) {}
+    Income(double amount, const std::string& date, const std::string& description, const std::string& category);
 };
 
 class Expense : public Transaction {
 public:
-    Expense(double amount, const std::string& date, const std::string& description, const std::string& category)
-            : Transaction(amount, date, description, category, Transaction::EXPENSE) {}
+    Expense(double amount, const std::string& date, const std::string& description, const std::string& category);
 };
 
-#endif //UNTITLED_TRANSACTION_H
+#endif //COURSEWORK_TRANSACTION_H
